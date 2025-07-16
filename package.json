@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "pm2 start index.js --deep-monitoring --attach --name Your Bot Name",
-    "stop": "pm2 stop Your Bot name",
-    "restart": "pm2 restart Your Bot name"
+    "stop": "pm2 stop Hela X Md",
+    "restart": "pm2 restart Hela X Md"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "6.6.0",
