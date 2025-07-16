@@ -5,6 +5,7 @@ const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, 
 cmd({
     pattern: "alive",
     desc: "Check bot online or no.",
+    react: "🔖"
     category: "main",
     filename: __filename
 },
@@ -73,11 +74,11 @@ menu[commands[i].category] += `.${commands[i].pattern}\n`;
 let madeMenu = `
 👋 𝐇𝐄𝐋𝐋𝐎, ${pushname}!
 
-✨ 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 your bot name ✨ 
+🍀 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝙃𝙚𝙡𝙖 𝙓 𝙈𝘿 𝘽𝙤𝙩 🤖✨ 
 ╭─「 ᴄᴏᴍᴍᴀɴᴅꜱ ᴘᴀɴᴇʟ」
 │◈ яυηтιмє * ${runtime(process.uptime())}
-│◈ σωηєя ηαмє * your name
-│◈ σωηєя ηυмвєя * your number 
+│◈ σωηєя ηαмє * ¢увєя ƒяσℓу
+│◈ σωηєя ηυмвєя * 94743491027 
 ╰──────────●●►
 ╭──────────●●►
  📥 *𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐌𝐞𝐧𝐮*
@@ -130,9 +131,9 @@ let madeMenu = `
  ${menu.tools}
 ╰───────────●●►
 
-> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ your bot name*`
+> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀ ꜰʀᴏʟʏ*`
 
-return await conn.sendMessage(from,{image: {url: `https://i.ibb.co/bHXBV08/9242c844b83f7bf9.jpg`},caption:madeMenu},{quoted: mek})
+return await conn.sendMessage(from,{image: {url: `https://i.ibb.co/Mx6XkM91/1c8e9724cdae1199.jpg`},caption:madeMenu},{quoted: mek})
 }catch(e){
 console.log(e)
 reply(`𝔼𝕣𝕣𝕣𝕠𝕣`)
