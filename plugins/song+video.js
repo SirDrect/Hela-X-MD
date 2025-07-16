@@ -19,24 +19,24 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const data = search.videos[0];
         const url = data.url;
 
-        let desc = `*🎼 SUPUN MD SONG DOWNLOADER . .⚙️*
+        let desc = `*❖ 𝙃𝙀𝙇𝘼 𝙓 𝙈𝘿 𝙎𝙊𝙉𝙂 𝘿𝙊𝙒𝙉𝙇𝙊𝘿𝙀𝙍 . . 🎧❖*
 
-🎼⚙️ TITLE - ${data.title}
+📈 TITLE - ${data.title}
 
-🎼⚙️ VIEWS - ${data.views}
+🔍 VIEWS - ${data.views}
 
-🎼⚙️ DESCRIPTION - ${data.description}
+📜 DESCRIPTION - ${data.description}
 
-🎼⚙️ TIME - ${data.timestamp}
+⏳ TIME - ${data.timestamp}
 
-🎼⚙️ AGO - ${data.ago}
+⏱️ AGO - ${data.ago}
 
 *Reply This Message With Option*
 
 *1 Audio With Normal Format*
 *2 Audio With Document Format*
 
-> ᴘᴀᴡᴇʀᴇᴅ ʙʏ ꜱᴜᴘᴜɴ ᴍᴅ`;
+> ©ᴘᴀᴡᴇʀᴇᴅ ʙʏ ʜᴇʟᴀ x ᴍᴅ`;
 
         const vv = await conn.sendMessage(from, { image: { url: data.thumbnail }, caption: desc }, { quoted: mek });
 
@@ -51,13 +51,13 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     case '1':
                         let down = await fg.yta(url);
                         let downloadUrl = down.dl_url;
-                        await conn.sendMessage(from, { audio: { url:downloadUrl }, caption: '> ᴘᴀᴡᴇʀᴇᴅ ʙʏ ꜱᴜᴘᴜɴ ᴍᴅ', mimetype: 'audio/mpeg'},{ quoted: mek });
+                        await conn.sendMessage(from, { audio: { url:downloadUrl }, caption: '> ©ᴘᴀᴡᴇʀᴇᴅ ʙʏ ʜᴇʟᴀ x ᴍᴅ', mimetype: 'audio/mpeg'},{ quoted: mek });
                         break;
                     case '2':               
                         // Send Document File
                         let downdoc = await fg.yta(url);
                         let downloaddocUrl = downdoc.dl_url;
-                        await conn.sendMessage(from, { document: { url:downloaddocUrl }, caption: '> ᴘᴀᴡᴇʀᴇᴅ ʙʏ ꜱᴜᴘᴜɴ ᴍᴅ', mimetype: 'audio/mpeg', fileName:data.title + ".mp3"}, { quoted: mek });
+                        await conn.sendMessage(from, { document: { url:downloaddocUrl }, caption: '> ©ᴘᴀᴡᴇʀᴇᴅ ʙʏ ʜᴇʟᴀ x ᴍᴅ', mimetype: 'audio/mpeg', fileName:data.title + ".mp3"}, { quoted: mek });
                         await conn.sendMessage(from, { react: { text: '✅', key: mek.key } })
                         break;
                     default:
@@ -92,24 +92,24 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const data = search.videos[0];
         const url = data.url;
 
-        let desc = `*📽️ SUPUN MD VIDEO DOWNLOADER . .⚙️*
+        let desc = `*❖ 𝙃𝙀𝙇𝘼 𝙓 𝙈𝘿 𝙑𝙄𝘿𝙀𝙊 𝘿𝙊𝙒𝙉𝙇𝙊𝘿𝙀𝙍 . .📽️❖*
 
-📽️⚙️ TITLE - ${data.title}
+📈 TITLE - ${data.title}
 
-📽️⚙️ VIEWS - ${data.views}
+🔍 VIEWS - ${data.views}
 
-📽️⚙️ DESCRIPTION - ${data.description}
+📜 DESCRIPTION - ${data.description}
 
-📽️⚙️ TIME - ${data.timestamp}
+⏳ TIME - ${data.timestamp}
 
-📽️⚙️ AGO - ${data.ago}
+⏱️ AGO - ${data.ago}
 
 *Reply This Message With Option*
 
 *1 Video With Normal Format*
 *2 Video With Document Format*
 
-> ᴘᴀᴡᴇʀᴇᴅ ʙʏ ꜱᴜᴘᴜɴ ᴍᴅ`;
+> ©ᴘᴀᴡᴇʀᴇᴅ ʙʏ ʜᴇʟᴀ x ᴍᴅ`;
 
         const vv = await conn.sendMessage(from, { image: { url: data.thumbnail }, caption: desc }, { quoted: mek });
 
@@ -124,12 +124,12 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     case '1':
                         let downvid = await fg.ytv(url);
                         let downloadvUrl = downvid.dl_url;
-                        await conn.sendMessage(from, { video : { url:downloadvUrl }, caption: '> ᴘᴀᴡᴇʀᴇᴅ ʙʏ ꜱᴜᴘᴜɴ ᴍᴅ', mimetype: 'video/mp4'},{ quoted: mek });
+                        await conn.sendMessage(from, { video : { url:downloadvUrl }, caption: '> ©ᴘᴀᴡᴇʀᴇᴅ ʙʏ ʜᴇʟᴀ x ᴍᴅ', mimetype: 'video/mp4'},{ quoted: mek });
                         break;
                     case '2':
                         let downviddoc = await fg.ytv(url);
                         let downloadvdocUrl = downviddoc.dl_url;
-                        await conn.sendMessage(from, { document: { url:downloadvdocUrl }, caption: '> ᴘᴀᴡᴇʀᴇᴅ ʙʏ ꜱᴜᴘᴜɴ ᴍᴅ', mimetype: 'video/mp4', fileName:data.title + ".mp4" }, { quoted: mek });
+                        await conn.sendMessage(from, { document: { url:downloadvdocUrl }, caption: '> ©ᴘᴀᴡᴇʀᴇᴅ ʙʏ ʜᴇʟᴀ x ᴍᴅ', mimetype: 'video/mp4', fileName:data.title + ".mp4" }, { quoted: mek });
                         break;
                     default:
                         reply("Invalid option. Please select a valid option🔴");
