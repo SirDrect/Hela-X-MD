@@ -20,16 +20,16 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     try {
         if (!q || !q.startsWith("https://")) return reply("Please provide a valid Facebook video URL!");
         const data = await fetchJson(`${baseUrl}/api/fdown?url=${q}`);
-        let desc = ` *SUPUN MD FB DOWNLOADER...⚙️*
+        let desc = ` *HELA X MD FB DOWNLOADER...⚙️*
 
 *Reply This Message With Option*
 
 *1 Download FB Video In HD*
 *2 Download FB Video In SD*
 
-> ᴘᴀᴡᴇʀᴇᴅ ʙʏ ꜱᴜᴘᴜɴ ᴍᴅ`;
+> ©ᴘᴀᴡᴇʀᴇᴅ ʙʏ ʜᴇʟᴀ x ᴍᴅ`;
 
-        const vv = await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/de82e3.jpg"}, caption: desc }, { quoted: mek });
+        const vv = await conn.sendMessage(from, { image: { url: "https://i.ibb.co/Mx6XkM91/1c8e9724cdae1199.jpg"}, caption: desc }, { quoted: mek });
 
         conn.ev.on('messages.upsert', async (msgUpdate) => {
             const msg = msgUpdate.messages[0];
@@ -40,10 +40,10 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
             if (msg.message.extendedTextMessage.contextInfo && msg.message.extendedTextMessage.contextInfo.stanzaId === vv.key.id) {
                 switch (selectedOption) {
                     case '1':
-                        await conn.sendMessage(from, { video: { url: data.data.hd }, mimetype: "video/mp4", caption: "> ᴘᴀᴡᴇʀᴇᴅ ʙʏ ꜱᴜᴘᴜɴ ᴍᴅ" }, { quoted: mek });
+                        await conn.sendMessage(from, { video: { url: data.data.hd }, mimetype: "video/mp4", caption: "> ᴘᴀᴡᴇʀᴇᴅ ʙʏ ʜᴇʟᴀ x ᴍᴅ" }, { quoted: mek });
                         break;
                     case '2':               
-                    await conn.sendMessage(from, { video: { url: data.data.sd }, mimetype: "video/mp4", caption: "> ᴘᴀᴡᴇʀᴇᴅ ʙʏ ꜱᴜᴘᴜɴ ᴍᴅ" }, { quoted: mek });
+                    await conn.sendMessage(from, { video: { url: data.data.sd }, mimetype: "video/mp4", caption: "> ᴘᴀᴡᴇʀᴇᴅ ʙʏ ʜᴇʟᴀ x ᴍᴅ" }, { quoted: mek });
                         break;
                     default:
                         reply("Invalid option. Please select a valid option🔴");
